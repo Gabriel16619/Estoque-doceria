@@ -3,10 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style2.css">
     <title>Site Estoque de Doces-Inicio</title>
 </head>
 <body>
-    <header></header>
-    <main></main>
+    <header class="header1">
+        <div class="escopo"> 
+            <div class="logo">
+                <img src="../FRONT-END/img/Group 4.png" alt="logo">
+            </div>
+
+            <div class="user">
+                <img src="../FRONT-END/img/pessoa.jpeg" alt="Usuarios">
+            </div>
+        </div>
+    </header>
+    <header class="header2">
+        <div class="buscar">
+            <input type="text" id="inputBuscar" placeholder="Que item você busca?">
+            <button class="buscar-doces" id="btnBuscar">Buscar</button>
+        </div>
+        <div class="botoes">
+                <button class="adicionar-doce" id="btnAdicionarDoce">+ Adicionar Doce</button>
+            <button class="historico" id="btnHistorico">📅 Historico</button>
+            </div>
+    </header>
+    <main>
+        <!-- Grade onde as caixas de doces vão aparecer -->
+        <div id="containerDoces" class="grade-doces">
+            <!-- Os cards dos doces serão injetaados pelo JavaScript-->
+        </div>
+    </main>
+
+        <!-- Caixa Modal (Formulário oculto que aparece ao clicar em Novo/Editar) -->
+    <div id="modalDoce" class="modal container-escondido">
+        <div class="modal-conteudo">
+            <h2>Adicionar Novos Doces</h2>
+            <form id="formDoce">
+                <input type="text" id="nomeDoce" placeholder="Nome" required>
+                <input type="text" id="RecheioDoce" placeholder="Recheio" required>> 
+                <input type="text" id="SaborDoce" placeholder="Sabor" required>> 
+                <input type="text" id="CoberturaDoce" placeholder="Cobertura" required>> 
+                <input type="text" id="MassaDoce" placeholder="Massa" required>> 
+                <input type="text" id="TipoDoce" placeholder="Tipo" required>> 
+                <input type="text" id="DataVDoce" placeholder="Data Validade" required>> 
+                <input type="text" id="DataFnomeDoce" placeholder="Data Feito" required>> 
+
+
+                <div class="botoes-modal">
+                    <button type="button" id="btnCancelar">Cancelar</button>
+                    <button type="submit" id="btnSalvar">Salvar</button>
+                </div>
+            </form>
+        </div>
 </body>
 </html>

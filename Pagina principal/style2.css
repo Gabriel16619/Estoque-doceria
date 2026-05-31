@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../FRONT-END/img/fundo.png);
+    background-repeat: repeat;
+
+}
+
+.container-escondido{
+    display: none !important;
+}
+
+.header1 {
+    background-color:#C2E5FF;
+    padding: 10px;
+    border-radius: 30px;
+    border-bottom: 1px solid black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.355);
+    margin: 50px 50px 10px 50px;
+
+}
+
+.header2 {
+    background-color:#C2E5FF;
+    padding: 10px;
+    border-radius: 20px;
+    border-bottom: 1px solid black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.355);
+    margin: 1px 50px 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.escopo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto 15px auto;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.adicionar-doce{
+    background-color: white ;
+    color: #C2E5FF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.historico{
+    background-color: white ;
+    color: #C2E5FF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.buscar{
+    background-color: #C2E5FF;
+    display:flex;
+    gap: 10px;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.buscar input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+}
+
+.buscar-doces {
+    background-color:  #ffffff;
+    color: #c2e5ff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+/* Grade de Cards de Doces */
+.grade-doces{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.buscar-doces:hover{
+    background-color: #0056b3;
+    box-shadow: 0 16px 12px rgba(0, 123, 255, 0.25);
+    transform: translateY(-1px);
+}
+
+.buscar-doces:active{
+    background-color: #004085;
+    box-shadow: 0 2px 4px rgba(0, 123, 255, 0.15);
+    transform: translateY(1px);
+}
+
+.buscar-doces:focus{
+    outline: 3px solid rgba(0, 123, 255, 0.4);
+}
+
+.logo img{
+    height: 9vh;
+}
