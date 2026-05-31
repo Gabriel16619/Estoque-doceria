@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../img/fundo.png);
+    background-repeat: repeat;
+}
+
+header {
+    background-color:#C2E5FF;
+    padding: 10px;
+    border-radius: 30px;
+    border-bottom: 1px solid black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.355);
+    margin: 50px 50px 10px 50px;
+
+}
+
+.user img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.escopo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+/* Grade de Cards dos doces deletados */
+.grade-doces-deletados{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img{
+    height: 9vh;
+}
+
+.botao{
+    margin: 20px 0 20px 50px;
+}
+.voltar{
+    background-color: rgba(255, 255, 255, 0) ;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 40px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    cursor: pointer;
+}
