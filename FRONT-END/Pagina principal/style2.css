@@ -130,3 +130,103 @@ body{
     height: 9vh;
 }
 
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal-conteudo {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.modal-conteudo h2{
+    text-align: center;
+    color: #C2E5FF;
+}
+
+.modal-conteudo form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modal-conteudo input{
+    padding: 10px;
+    border: 1px solid #C2E5FF;
+    border-radius: 8px;
+    outline: none;
+}
+
+.botoes-modal{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.botoes-modal button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#btnCancelar {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+#btnSalvar {
+    background-color: #C2E5FF;
+    color: white;
+}
+
+/* Card do doce */
+.card-doce {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card-doce:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Conteúdo do card */
+.conteudo-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.conteudo-card h3 {
+    color: #C2E5FF;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #C2E5FF;
+    padding-bottom: 8px;
+    margin-bottom: 4px;
+}
+
+.conteudo-card p {
+    color: #555;
+    font-size: 0.9rem;
+}
