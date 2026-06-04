@@ -105,8 +105,9 @@ const renderizarDoces = async () => {
         containerDoces.removeChild(containerDoces.firstChild);
     }
 
-    const doces = await buscarDoces();
-    doces.forEach(doce => criarCardDoce(doce));
+const doces = await buscarDoces();
+if (!doces || doces.length === 0) return; // ← proteção
+doces.forEach(doce => criarCardDoce(doce));
 };
 
 // Chama ao carregar a página

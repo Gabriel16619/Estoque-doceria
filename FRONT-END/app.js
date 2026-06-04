@@ -5,7 +5,10 @@
  * version: 1.0
  ***********************************************************************/
 
-const URL_BASE = 'https://api-estoque-doce.onrender.com/v1/doceriagoumert/'
+const URL_BASE = 'https://api-estoque-doce.onrender.com/v1/doceriagourmet'
+
+let doce = [];
+
 
 export async function salvarDoce(doce) {
     const resposta = await fetch(URL_BASE, {
@@ -22,12 +25,20 @@ export async function salvarDoce(doce) {
 }
 
 export async function buscarDoces() {
-    const resposta = await fetch(URL_BASE);
-    if (!resposta.ok) throw new Error('Erro ao buscar doces');
+    try {
+        const res = await fetch(`${URL_BASE}/doce`);
+        const json = await res.json();
 
-    return await resposta.json();
-    
-}
+        // API sem dados → retorna array vazio em vez de erro
+        if (!json.status) return [];
+
+        return json.resposta.doce;
+
+    } catch (error) {
+        console.error('Erro ao buscar doces:', error);
+        return []; 
+    }
+} 
 
 export async function editarDoce(id, doce) {
     const resposta = await fetch(`${URL_BASE}/${id}`, {
